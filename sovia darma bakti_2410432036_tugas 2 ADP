@@ -1,0 +1,27 @@
+nama=input("Siapa namamu ? ")
+print("## SELAMAT BERMAIN ##")
+print(f"pemain {nama}")
+n=int(input("pilih angka positif sampai berapa : "))
+k=int(input("angka bom : "))
+for n in range (1,n):
+    m=n%k
+    if m==0 :
+        print(n, "bom")
+    else :
+        print(n,"bukan bom")
+print("==========================")
+print("..........................")
+print("##########################")
+lawan=input("siapa nama mu ? ")
+print(f"pemain {lawan}")
+while True:
+    tebak_angka=int(input(f"tebak angka dari 1 - {n}:"))
+    if 1<=tebak_angka>=n :
+        print("coba lagi")
+        continue
+    elif tebak_angka%k==0 :
+        print(tebak_angka," adalah bom,anda kalah")
+        break
+    else:
+        print(tebak_angka," anda menang")
+        break
